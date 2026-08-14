@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Padrão</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --primary: #2563eb;
+        --card: #ffffff;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(1100px, 90%);
+        margin: 0 auto;
+      }
+
+      header {
+        background: var(--primary);
+        color: #fff;
+        padding: 1.25rem 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1.2rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 3rem 0;
+      }
+
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 2.5rem;
+        text-align: center;
+      }
+
+      .hero h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      .hero p {
+        margin: 0 auto 1.5rem;
+        max-width: 700px;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        padding: 0.85rem 1.4rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      footer {
+        background: #111827;
+        color: #d1d5db;
+        text-align: center;
+        padding: 1.25rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Minha Empresa</div>
+          <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <h1>Bem-vindo à nossa página</h1>
+          <p>
+            Esta é uma página HTML padrão, organizada, responsiva e pronta para ser
+            usada como base para projetos simples ou profissionais.
+          </p>
+          <a class="btn" href="#">Saiba mais</a>
+        </section>
+
+        <section class="grid">
+          <article class="card">
+            <h2>Serviço 1</h2>
+            <p>Desenvolvimento de soluções modernas e eficientes para o seu negócio.</p>
+          </article>
+
+          <article class="card">
+            <h2>Serviço 2</h2>
+            <p>Atendimento personalizado com foco em qualidade, rapidez e valor.</p>
+          </article>
+
+          <article class="card">
+            <h2>Serviço 3</h2>
+            <p>Estratégias digitais que ajudam sua empresa a crescer de forma sustentável.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Minha Empresa. Todos os direitos reservados.</div>
+    </footer>
+  </body>
+</html>
 
